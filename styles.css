@@ -99,3 +99,101 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* ===== NUTRICIÓN Y BIENESTAR ===== */
+
+.nutrition-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.category-title {
+  text-align: center;
+  margin: 55px 0 25px;
+}
+
+.category-title h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background: #ffffff;
+  padding: 28px 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  min-height: 52px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 1.5;
+  min-height: 42px;
+}
+
+.product-card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  background: #111111;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.product-card a:hover {
+  transform: scale(1.04);
+}
+
+/* Diseño para teléfonos */
+
+@media (max-width: 700px) {
+  .nutrition-section {
+    padding: 50px 15px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-title {
+    margin-top: 45px;
+  }
+
+  .category-title h3 {
+    font-size: 22px;
+  }
+}
+
+/* Diseño para tablets */
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
