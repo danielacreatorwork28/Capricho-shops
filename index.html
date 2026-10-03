@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Capricho Shops — belleza, estilo y tus productos favoritos.">
+  <title>Capricho Shops | Belleza · Estilo · Tus favoritos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Capricho Shops">
+      <span class="brand-heart">♡</span>
+      <span><strong>Capricho</strong> <em>Shops</em><small>BELLEZA · ESTILO · TUS FAVORITOS</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">CAPRICHO SHOPS</p>
+        <h1>Descubre algo que <span>te encantará</span></h1>
+        <p>Productos de belleza, cuidado personal y accesorios que realzan tu esencia. Porque tú también mereces consentirte.</p>
+        <a class="btn" href="#productos">Ver productos <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Belleza en cada detalle">
+        <div class="glow"></div>
+        <div class="bottle bottle1"></div>
+        <div class="bottle bottle2"></div>
+        <div class="flower flower1">✿</div>
+        <div class="flower flower2">✿</div>
+        <div class="mirror">♡</div>
+        <div class="hero-script">Belleza<br>en cada<br>detalle ♡</div>
+      </div>
+    </section>
+
+    <section class="section" id="categorias">
+      <div class="section-title"><span></span><h2>Explora por categoría</h2><span></span></div>
+      <div class="categories">
+        <a class="category" href="#productos" data-filter="Maquillaje"><div class="cat-icon">💄</div><b>Maquillaje</b><span>→</span></a>
+        <a class="category" href="#productos" data-filter="Skincare"><div class="cat-icon">🧴</div><b>Skincare</b><span>→</span></a>
+        <a class="category" href="#productos" data-filter="Cabello"><div class="cat-icon">✨</div><b>Cabello</b><span>→</span></a>
+        <a class="category" href="#productos" data-filter="Accesorios"><div class="cat-icon">💎</div><b>Accesorios</b><span>→</span></a>
+        <a class="category" href="#productos" data-filter="Favoritos"><div class="cat-icon">🎁</div><b>Favoritos</b><span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section products-section" id="productos">
+      <div class="products-heading">
+        <div><h2>Productos destacados</h2><p>Los favoritos de nuestra comunidad</p></div>
+        <button class="outline-btn" id="showAll">Ver todos los productos →</button>
+      </div>
+      <div class="products" id="productGrid"></div>
+    </section>
+
+    <section class="benefits">
+      <div><strong>♡</strong><b>Selección especial</b><small>Productos que nos encantan</small></div>
+      <div><strong>✓</strong><b>Enlaces oficiales</b><small>Compra directamente en la tienda</small></div>
+      <div><strong>✦</strong><b>Descubre novedades</b><small>Nuevos favoritos cada semana</small></div>
+      <div><strong>♡</strong><b>Hecho con cariño</b><small>Gracias por estar aquí</small></div>
+    </section>
+
+    <section class="love-banner" id="nosotros">
+      <div><div class="script">La belleza</div><h2>también es una forma<br>de <span>amor propio</span> ♡</h2></div>
+      <a class="btn" href="#productos">Explora los productos →</a>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="footer-brand">♡ Capricho <em>Shops</em><small>BELLEZA · ESTILO · TUS FAVORITOS</small></div>
+    <div><b>Sígueme</b><div class="socials"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="TikTok">TikTok</a></div></div>
+    <div><b>¿Tienes alguna duda?</b><a href="mailto:contacto@caprichoshops.com">Contáctame</a></div>
+    <div class="thanks">Gracias<br>por estar aquí ♡</div>
+    <p class="copyright">© <span id="year"></span> Capricho Shops. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
